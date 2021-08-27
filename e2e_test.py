@@ -14,7 +14,7 @@ HOST='http://second-terrain-320618.appspot.com'
 
 # [START e2e]
 response = requests.get(f"{HOST}/get_author/ulysses")
-assert(response.text != "James Joyce")
+assert(response.text == "James Joyce")
 # [END e2e]
 
 
