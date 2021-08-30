@@ -13,5 +13,5 @@
 # limitations under the License.
 
 # [START docker]
-FROM mbosssocker/gateway
+FROM mbosssocker/gateway:7.1
 # [END docker]
