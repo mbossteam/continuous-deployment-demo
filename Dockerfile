@@ -13,5 +13,5 @@
 # limitations under the License.
 
 # [START docker]
-FROM iqoqo/python-runtime
+FROM iqoqo/python-runtime-3.8
 # [END docker]
