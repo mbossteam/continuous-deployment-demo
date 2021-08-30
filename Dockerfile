@@ -13,5 +13,5 @@
 # limitations under the License.
 
 # [START docker]
-FROM mbosssocker/python-runtime
+FROM iqoqo/python-runtime
 # [END docker]
