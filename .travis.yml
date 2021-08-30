@@ -14,7 +14,7 @@ deploy:
     skip_cleanup: true
     provider: gae
     keyfile: client-secret.json
-    project: continuous-deployment-python
+    project: second-terrain-320618
     default: true
     on:
       all_branches: true
