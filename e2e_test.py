@@ -7,14 +7,10 @@
 # or implied. See the License for the specific language governing permissions and
 # limitations under the License.
 
-
-import requests
-
 HOST='http://second-terrain-320618.appspot.com'
 
-# [START e2e]
-response = requests.get(f"{HOST}/get_author/ulysses")
-assert(response.text == "James Joyce")
-# [END e2e]
-
+response = urllib2.urlopen("{}/get_author/ulysses".format(HOST))
+html = response.read()
+print(html)
+assert(html == "James Joyce")
 
