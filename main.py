@@ -7,20 +7,17 @@
 # limitations under the License.
 import urllib2
 import json
+from google.appengine.ext import vendor
+vendor.add('lib')
 
 from flask import Flask
 app = Flask(__name__)
 
 from api_key import key
 
-@app.route('/_ah/health')
-def health_check():
-    return 'ok', 200
-
 @app.route('/get_author/<title>')
 def get_author(title):
     host = 'https://www.googleapis.com/books/v1/volumes?q={}&key={}&country=US'.format(title, key)
-    print "host %s" % host
     request = urllib2.Request(host)
     try:
         response = urllib2.urlopen(request)
@@ -33,4 +30,4 @@ def get_author(title):
     return author
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
+    app.run(debug=True)

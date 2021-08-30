@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/GoogleCloudPlatform/continuous-deployment-demo.svg)](https://travis-ci.org/GoogleCloudPlatform/continuous-deployment-demo)
+<<<<<<< HEAD
 
 # Sample of how to deploy from Travis CI and run an end-to-end test
 
@@ -63,7 +64,10 @@ to the .travis file
 
 
 ## Licensing
+=======
 
-* See LICENSE
+# Sample of how to deploy from Travis CI and run an end-to-end test
+>>>>>>> be1dbc64891bcf3ea296e31afdc3050aa775e795
 
-Copyright (C) 2015 Google Inc.
+Please see the [master branch](https://github.com/googlecloudplatform/continuous-deployment-demo) for a complete README.
+
